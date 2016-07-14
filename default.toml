@@ -8,7 +8,7 @@
 image          = "quay.io/eris/erisdb:version"
 data_container = true
 ports          = [ "1337", "46656", "46657" ]
-entry_point    = "erisdb-wrapper"
+entry_point    = "/usr/local/bin/start_eris_db"
 
 [dependencies]
 services = [ "keys" ]
